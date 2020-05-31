@@ -2,6 +2,8 @@ let ul = $('#list')
 let add = $('#btnAdd')
 let clear = $('#btnClear')
 let task = $('#inpText')
+let btnSort = $('#btnSort')
+let btnRemove = $('#btnRemove')
 
 function additem() {
     if(task.val()){
@@ -26,3 +28,11 @@ task.keypress((e) => {
 })
 
 clear.click(() => task.val(''))
+
+btnRemove.click(() => {
+    $('ul .done').remove()
+})
+
+btnSort.click(() => {
+    $('ul .done').appendTo(ul)
+})
