@@ -8,6 +8,9 @@ add.click(() => {
         'class': 'list-group-item',
         'text': task.val()
     })
+    element.click(() => {
+        element.toggleClass('done')
+    })
     ul.append(element)
 })
 
