@@ -2,3 +2,15 @@
     color: #cccccc;
     text-decoration: line-through;
 }
+
+.button-box {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 600px) {
+    .button-box {
+        display: flex;
+        flex-direction: column;
+    }
+}
